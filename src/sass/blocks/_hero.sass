@@ -1,20 +1,22 @@
+body
+  +reg
 .hero
   padding: 50px 0
   &-block
     display: flex
   &-text
     flex-basis: 45%
-    padding-right: 139px
+    padding-right: 140px
     &__title
       font-size: 41px
-      font-weight: 800
       line-height: 55px
-      margin-bottom: 40px
+      margin-bottom: 37px
+      +bold
     &__subtitle
       display: inline-block
       font-size: 20px
-      font-weight: 500
-      margin-bottom: 59px
+      +bold
+      margin-bottom: 64px
     &__item
       display: flex
       align-items: center
@@ -33,10 +35,12 @@
       margin-right: 30px
     &__text
       max-width: 300px
+      font-size: 14px
+      line-height: 1.70
 @media ( max-width: 1200px )
   .hero
     &-block
-      flex-direction: column
+      flex-direction: row
     &-list
       margin-bottom: 44px
     &-text
@@ -46,16 +50,28 @@
     &-text
       &__title
         font-size: 24px
-        line-height: 1.4
-        margin-bottom: 14px
+        line-height: 1.2
+        margin: 0 0 0 4px
       &__subtitle
         font-size: 16px
-        margin-bottom: 28px
-      &-list
-        &__item
-          margin-bottom: 20px
-        &__text
-          font-size: 12px
-        &__image
-          margin-right: 15px
+        margin: 9px 0 25px 5px
+      &__item
+        min-width: 300px
+        margin-bottom: 21px
+    &-list
+      margin: 0
+      &__item
+        margin-bottom: 20px
+      &__text
+        max-width: 300px 
+        font-size: 12px
+        line-height: 1.2
+      &__image
+        min-width: 40px
+        height: 36px
+        margin-right: 14px
+    &-block
+      flex-direction: column
+    &-image
+      margin-top: 10
   
