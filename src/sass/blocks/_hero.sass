@@ -1,13 +1,13 @@
-body
-  +reg
 .hero
   padding: 50px 0
+  background-color: $secondary
   &-block
     display: flex
   &-text
     flex-basis: 45%
-    padding-right: 140px
+    padding-right: 100px
     &__title
+      min-width: 500px
       font-size: 41px
       line-height: 55px
       margin-bottom: 37px
@@ -21,6 +21,8 @@ body
       display: flex
       align-items: center
       margin-bottom: 25px
+      &:last-child
+        margin-bottom: 0
   &-list
     margin: 0
     padding: 0
@@ -49,6 +51,7 @@ body
   .hero
     &-text
       &__title
+        min-width: 250px
         font-size: 24px
         line-height: 1.2
         margin: 0 0 0 4px
@@ -57,7 +60,6 @@ body
         margin: 9px 0 25px 5px
       &__item
         min-width: 300px
-        margin-bottom: 21px
     &-list
       margin: 0
       &__item
@@ -73,5 +75,5 @@ body
     &-block
       flex-direction: column
     &-image
-      margin-top: 10
+      padding-top: 37px
   
