@@ -21,7 +21,7 @@
             <span class="navbar__address">Калуга, Москва, МО</span>
             <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
-          <button class="button navbar__button">Перезвоните мне</button>
+          <button class="button navbar__button" id="button">Перезвоните мне</button>
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -99,5 +99,33 @@
     </section>
     <!-- /.offer -->
   </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close">&times;</button>
+      <div class="modal-block">
+        <h2 class="section-title modal__title">Узнайте точную стоимость ремонта по телефону!</h2>
+         <!-- /.section-title -->
+        <span class="section-subtitle modal__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+        <!-- /.section-subtitle -->
+        <form action="#" class="form modal__form">
+          <input type="text" class="input modal__input" placeholder="Ваше имя">
+          <input type="tel" class="input modal__input" placeholder="Ваш телефон">
+          <button class="button modal__button">Узнать стоимость</button>
+        </form>
+        <div class="modal__back-phone">
+          <span class="modal__message">Или Вы можете перезвонить нам сами по телефону:</span> 
+            <a href="tel:+7(495)42-251-31" class="modal__phone">+7 (8182) 42-51-31</a>
+        </div>
+        <!-- /.massage -->
+      </div>
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <script src="js/main.js"></script>
+
+
 </body>
 </html>
