@@ -14,6 +14,9 @@
     margin-top: 68px
     display: flex
     justify-content: space-between
+.slider
+  &__item
+    max-width: 400px
 @media ( max-width: 576px )
   .portfolio
     &__title
@@ -21,5 +24,17 @@
       font-size: 18px
       margin: -87px 0 6px 0
       line-height: 1.27
+      margin-bottom: 40px
     &__arrows
-      margin-top: 50px
+      margin-top: -26px
+    .slick-slider
+      margin: auto
+      width: 245px
+      height: 260px
+@media ( max-width: 768px )
+  .portfolio
+    &__title
+      max-width: 500px
+  .slider
+    &__image
+      margin: auto
