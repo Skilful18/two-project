@@ -63,21 +63,40 @@
     display: flex
     justify-content: space-between
     flex-wrap: wrap
-@media (max-width: 320px)
-  .price
-    &__title
-      font-size: 16px
-      max-width: 250px
-      +bold
-    &__subtitle
-      font-size: 14px
-      margin-bottom: 29px
-@media (max-width: 768px)
-  .price
-    &__card
-      margin: auto
 @media (max-width: 1024px)
   .price
     &__title
       margin: auto
+@media (max-width: 768px)
+  .price
+    &__card
+      margin: auto
+@media (max-width: 320px)
+  .price  
+    &__title
+      font-size: 18px
+      max-width: 250px
+      +bold
+      margin: -43px 0 23px 12px
+      line-height: 1.26
+    &__subtitle
+      font-size: 14px
+      margin-left: -26px
+    &__card
+      margin: 0
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 10px
+  .card
+    &s 
+      max-width: 272px
+    &__text
+      padding: 35px
+      line-height: 0.4
+    &__title
+      font-size: 14px
+    &__image
+      max-width: 270px
+      
+
       
