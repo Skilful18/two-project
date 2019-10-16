@@ -1,0 +1,25 @@
+.helping
+  &__img
+    display: flex
+    justify-content: space-between
+    margin-top: 10px
+@media (max-width: 1200px)
+  .helping
+    &__img
+      max-width: 800px
+    &__help
+      max-width: 250px
+@media (max-width: 768px)
+  .helping
+    &__img
+      display: flex
+      justify-content: center
+@media (max-width: 576px)
+  .helping
+    &__img
+      display: flex
+      flex-direction: column
+      margin: auto
+    &__help
+      max-width: 275px
+      margin: -30px 0px 60px 0px

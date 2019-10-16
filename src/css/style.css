@@ -23,6 +23,7 @@
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 img {
@@ -843,6 +844,193 @@ img {
     margin: 0 7px 37px 0;
   }
   .step__br {
+    display: block;
+  }
+}
+
+/* Стили для блока info */
+.info {
+  display: block;
+  min-height: 285px;
+  background-color: #ffd200;
+  background-size: 100%;
+}
+
+.info__title {
+  text-align: center;
+  margin-bottom: 200px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 7px 20px 40px 0;
+  line-height: 1.55;
+}
+
+@media (max-width: 576px) {
+  .info {
+    display: block;
+    margin-top: -65px;
+    max-height: 230px;
+    min-height: 230px;
+  }
+  .info__title {
+    font-size: 18px;
+    margin: -22px 3px 0 0;
+    line-height: 1.3;
+  }
+}
+
+/* Стили для блока помощи */
+.helping__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .helping__img {
+    max-width: 800px;
+  }
+  .helping__help {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .helping__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .helping__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  .helping__help {
+    max-width: 275px;
+    margin: -30px 0px 60px 0px;
+  }
+}
+
+/* Стили для блока заголовок договора */
+.title__agreement-title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: -41px;
+  margin-right: 14px;
+  line-height: 1.38;
+}
+
+@media (max-width: 576px) {
+  .title__agreement-title {
+    max-width: 250px;
+    font-size: 18px;
+    margin: -170px 0 0 15px;
+    line-height: 1.25;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+  .title__agreement-title br {
+    display: none;
+  }
+}
+
+/* Стили для блока договор */
+.agreements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: -110px;
+}
+
+.agreement__page-1 {
+  text-align: center;
+}
+
+.agreement__page-2 {
+  text-align: center;
+}
+
+.agreement__page-3 {
+  text-align: center;
+}
+
+.agreement__text-1 {
+  max-width: 250px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.agreement__text-2 {
+  max-width: 290px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.agreement__text-3 {
+  max-width: 276px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.agreement__img {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 576px) {
+  .agreement {
+    margin-top: -102px;
+  }
+  .agreements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .agreement__img {
+    margin-bottom: 21px;
+  }
+  .agreement__text-1 {
+    font-size: 14px;
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 44px;
+  }
+  .agreement__text-2 {
+    font-size: 14px;
+    max-width: 240px;
+    margin: auto;
+    margin-bottom: 44px;
+  }
+  .agreement__text-3 {
+    font-size: 14px;
+    max-width: 220px;
+    margin: auto;
+    margin-bottom: 44px;
+    line-height: 1.2;
+  }
+  .agreement__br {
     display: block;
   }
 }
