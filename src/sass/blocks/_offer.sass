@@ -26,7 +26,6 @@
     margin-bottom: 30px
     line-height: 0.9
   &__input
-    margin-bottom: 30px
     width: 240px
     &:first-child
       margin-right: 11px
@@ -34,6 +33,7 @@
     width: 100%
     min-height: 70px
     margin-bottom: 33px
+    margin-top: 30px
   &__back-phone
     display: flex
     justify-content: space-around
@@ -56,6 +56,9 @@
     font-size: 15px
     color: #333333
     text-decoration: none
+  &__form
+    &-flex
+      display: flex     
 @media ( max-width: 1200px )
   .offer
     background-size: cover
@@ -112,7 +115,19 @@
       margin-bottom: 21px
       max-width: 274px
       line-height: 1.35
+@media ( max-width: 576px )
+  .offer
+    &__button
+      margin-top: 0px
+      margin-bottom: 20px
+    &__form-flex
+      display: flex
+      flex-direction: column
 @media ( max-width: 320px )
   .offer
     &__phone
       margin-bottom: -30px
+    &__form-flex
+      display: flex
+      flex-direction: column
+
