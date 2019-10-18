@@ -1,0 +1,79 @@
+.footer
+  position: relative
+  &__phone
+    text-decoration: none
+    color: $text-color
+.map
+  position: absolute
+  left: 0
+  top: 0
+  width: 50%
+  overflow-y: hidden
+  height: 100%
+  max-height: 100%
+.contacts
+  flex-basis: 50%
+  padding-top: 100px
+  padding-left: 200px
+  &__title
+    +bold
+    font-size: 22px
+    line-height: 1.5
+    margin-bottom: 91px
+    max-width: 300px
+    margin-top: -10px
+    margin-left: 14px
+  &-block
+    display: flex
+    justify-content: flex-end
+  &-list
+    padding: 0
+    list-style: none
+    margin-left: 14px
+    &__icon
+      width: 20px
+      height: 20px
+      text-align: center
+      line-height: 20px
+      margin-right: 23px
+    &__item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 36px
+    &__text
+      max-width: 150px
+      line-height: 1.5
+      &-3
+        line-height: 1.2
+      &-br
+        +bold
+@media ( max-width: 768px )
+  .footer
+    display: flex
+    flex-direction: column-reverse
+  .contacts-block
+    display: flex
+    justify-content: flex-start
+    width: 100%
+    margin-left: 5px
+  .contacts
+    flex-basis: 100%
+    padding-top: 0
+    padding-left: 0
+    &__title
+      max-width: 290px
+      font-size: 18px
+      margin-top: 53px
+      margin-bottom: 0
+      line-height: 1.3
+      +bold
+    &-list
+      margin-left: 10px
+      margin-bottom: 65px
+      &__item
+        margin-top: 30px
+      &__text
+        margin-left: -10px
+  .map
+    position: relative
+    width: 100%

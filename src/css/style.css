@@ -99,10 +99,6 @@ img {
   cursor: pointer;
 }
 
-.error {
-  color: red;
-}
-
 /* Импорт стилей шапки * */
 .navbar {
   padding: 8px 0;
@@ -529,6 +525,17 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.input-group {
+  position: relative;
+}
+
+em.offer-invalid {
+  color: red;
+  position: absolute;
+  top: 4px;
+  left: 26px;
 }
 
 /* Стили для слайдера portfolio */
@@ -1089,12 +1096,14 @@ img {
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
   margin-top: 115px;
+  padding: 77px 0;
 }
 
 .brif-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 13px;
 }
 
 .brif__interview {
@@ -1336,6 +1345,153 @@ img {
   }
 }
 
+.input-group {
+  position: relative;
+}
+
+em.brif-invalid {
+  color: red;
+  position: absolute;
+  top: 2px;
+  left: 26px;
+}
+
+/* Стили для блока footer */
+.footer {
+  position: relative;
+}
+
+.footer__phone {
+  text-decoration: none;
+  color: #333333;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  overflow-y: hidden;
+  height: 100%;
+  max-height: 100%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 91px;
+  max-width: 300px;
+  margin-top: -10px;
+  margin-left: 14px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+  margin-left: 14px;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 36px;
+}
+
+.contacts-list__text {
+  max-width: 150px;
+  line-height: 1.5;
+}
+
+.contacts-list__text-3 {
+  line-height: 1.2;
+}
+
+.contacts-list__text-br {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contacts-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    margin-left: 5px;
+  }
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .contacts__title {
+    max-width: 290px;
+    font-size: 18px;
+    margin-top: 53px;
+    margin-bottom: 0;
+    line-height: 1.3;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+  .contacts-list {
+    margin-left: 10px;
+    margin-bottom: 65px;
+  }
+  .contacts-list__item {
+    margin-top: 30px;
+  }
+  .contacts-list__text {
+    margin-left: -10px;
+  }
+  .map {
+    position: relative;
+    width: 100%;
+  }
+}
+
 /* Стили для модального окна */
 .modal {
   position: fixed;
@@ -1389,6 +1545,7 @@ img {
 
 .modal__input {
   margin: 0 60px 10px 60px;
+  padding: 25px 190px 25px 25px;
 }
 
 .modal__button {
@@ -1485,5 +1642,16 @@ img {
 
 #modal-form {
   text-align: center;
+}
+
+.input-group {
+  position: relative;
+}
+
+em.modal-invalid {
+  color: red;
+  position: absolute;
+  top: 2px;
+  left: 66px;
 }
 /*# sourceMappingURL=style.css.map */
